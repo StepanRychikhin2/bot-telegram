@@ -1,0 +1,14 @@
+body{
+    background-color: rgb(0, 56, 56);
+}
+.conteiner {
+    display: flex;
+    flex-direction: column;
+justify-content: center;
+align-items: center;
+
+}
+
+.imgGiff {
+    width: 300px;
+}
