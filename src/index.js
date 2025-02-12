@@ -29,7 +29,7 @@
 //     } else if (tetx === 30) {
 //         tetx += 10
 //  btnNo.textContent = "pookie please..."
-        
+
 //     } else {
 //     }
 // // console.log(bittonHeit + "px")
@@ -37,29 +37,50 @@
 //     btnYes.style.height = bittonHeit + "px";
 // })
 const messages = [
-    "Are you sure?",
-    "Really sure??",
-    "Are you positive?",
-    "Pookie please...",
-    "Just think about it!",
-    "If you say no, I will be really sad...",
-    "I will be very sad...",
-    "I will be very very very sad...",
-    "Ok fine, I will stop asking...",
-    "Just kidding, say yes please! ❤️"
-];
+	'No no no',
+	'Are you sure?',
+	'No, think again',
+	"I'm going to cry now",
+	"I can't believe",
+	'PLEASE!!!',
+]
 
-let messageIndex = 0;
+let messageIndex = 0
 
 function handleNoClick() {
-    const noButton = document.querySelector('.no-button');
-    const yesButton = document.querySelector('.yes-button');
-    noButton.textContent = messages[messageIndex];
-    messageIndex = (messageIndex + 1) % messages.length;
-    const currentSize = parseFloat(window.getComputedStyle(yesButton).fontSize);
-    yesButton.style.fontSize = `${currentSize * 1.5}px`;
+	const noButton = document.querySelector('.no-button')
+	const yesButton = document.querySelector('.yes-button')
+	// setPosition({
+	//     left: `${Math.floor(Math.random() * 60 - 40) + 40}%`,
+	//     top: `${Math.floor(Math.random() * (90 - 65 + 1)) + 65}%`,
+	// })
+	let btnLeft = Math.floor(Math.random() * 60 - 40) + 40
+	let top = Math.floor(Math.random() * (90 - 65 + 1)) + 65
+	noButton.style.left = btnLeft + "%"
+	noButton.style.top = top + "%"
+    noButton.style.position = 'absolute'
+	noButton.textContent = messages[messageIndex]
+	messageIndex = (messageIndex + 1) % messages.length
+	const currentSize = parseFloat(window.getComputedStyle(yesButton).fontSize)
+	yesButton.style.fontSize = `${currentSize * 1.6}px`
+	if (messageIndex === 0) {
+        yesButton.style.zIndex = 100
+        noButton.style.position = 'static'
+		console.log(123)
+		yesButton.style.position = 'absolute'
+		yesButton.style.top = 0
+		yesButton.style.left = 0
+		yesButton.style.width = '100%'
+		yesButton.style.height = '100%'
+		yesButton.style.fontSize = `80px`
+		// top: 0;
+		// left: 0;
+		// position: absolute;
+		// width: 100%;
+		// height: 100%;
+	}
 }
 
 function handleYesClick() {
-    window.location.href = "yes_page.html";
+	window.location.href = 'yes_page.html'
 }
