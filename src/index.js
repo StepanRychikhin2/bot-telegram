@@ -67,12 +67,13 @@ function handleNoClick() {
         yesButton.style.zIndex = 100
         noButton.style.position = 'static'
 		console.log(123)
-		yesButton.style.position = 'absolute'
-		yesButton.style.top = 0
-		yesButton.style.left = 0
-		yesButton.style.width = '100%'
-		yesButton.style.height = '100%'
-		yesButton.style.fontSize = `80px`
+		// yesButton.style.position = 'absolute'
+		// yesButton.style.top = 0
+		// yesButton.style.left = 0
+		// yesButton.style.width = '100%'
+		// yesButton.style.height = '100%'
+		// yesButton.style.fontSize = `80px`
+        yesButton.classList = "last"
 		// top: 0;
 		// left: 0;
 		// position: absolute;
