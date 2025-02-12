@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 body {
-	background: #c9404082;
+	background: #e9797982;
 }
 
 .container {
@@ -20,9 +22,17 @@ h1 {
 .buttons {
 	margin-top: 20px;
 }
-
-.titleTwo{
-  color: white;
+.titleone {
+	font-size: 38px;
+	font-weight: 400;
+	font-family: 'Montserrat', serif;
+}
+.titleTwo {
+	font-style: italic;
+	font-family: 'Playfair Display', serif;
+	font-weight: 700;
+	font-size: 55px;
+	color: white;
 }
 * {
 	padding: 0;
