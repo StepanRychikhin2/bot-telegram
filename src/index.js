@@ -50,6 +50,7 @@ let messageIndex = 0
 function handleNoClick() {
 	const noButton = document.querySelector('.no-button')
 	const yesButton = document.querySelector('.yes-button')
+    yesButton.textContent =  yesButton.textContent + "!"
 	// setPosition({
 	//     left: `${Math.floor(Math.random() * 60 - 40) + 40}%`,
 	//     top: `${Math.floor(Math.random() * (90 - 65 + 1)) + 65}%`,

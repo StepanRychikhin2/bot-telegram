@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,400..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Love+Ya+Like+A+Sister&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Play:wght@400;700&family=VT323&display=swap');
 body {
 	background: #ffd3d3;
 }
@@ -41,7 +42,9 @@ h1 {
 }
 .yes-button {
 	transition: all 0.8s ease-in-out;
-
+  font-family: "Play", serif;
+  font-weight: 400;
+  font-style: normal;
 	font-size: 1.5em;
 	padding: 5px 10px;
 	background-color: #4caf50;
@@ -69,10 +72,13 @@ h1 {
 	margin-top: 20px;
 }
 .last {
+ 
 	font-size: 80px;
 	transition: all 0.8s ease;
 	background-color: #4caf50;
-
+  font-family: "Play", serif;
+  font-weight: 400;
+  font-style: normal;
 	font-size: 100px;
 	width: 100vw;
 	height: 100vh;
