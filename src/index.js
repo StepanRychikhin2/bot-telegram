@@ -63,7 +63,7 @@ function handleNoClick() {
 	messageIndex = (messageIndex + 1) % messages.length
 	const currentSize = parseFloat(window.getComputedStyle(yesButton).fontSize)
 	yesButton.style.fontSize = `${currentSize * 1.5}px`
-	if (messageIndex === 0) {
+	if (messageIndex === 5) {
         yesButton.style.zIndex = 100
         noButton.style.position = 'static'
 		console.log(123)
