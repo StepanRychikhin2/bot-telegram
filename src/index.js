@@ -50,25 +50,28 @@ let messageIndex = 0
 function handleNoClick() {
 	const noButton = document.querySelector('.no-button')
 	const yesButton = document.querySelector('.yes-button')
-    // yesButton.textContent =  yesButton.textContent + "!"
-	
+	// yesButton.textContent =  yesButton.textContent + "!"
+
 	let btnLeft = Math.floor(Math.random() * 60 - 40) + 40
 	let top = Math.floor(Math.random() * (90 - 65 + 1)) + 65
-	noButton.style.left = btnLeft + "%"
-	noButton.style.top = top + "%"
-    noButton.style.position = 'absolute'
+	noButton.style.left = btnLeft + '%'
+	noButton.style.top = top + '%'
+	noButton.style.position = 'absolute'
 	noButton.textContent = messages[messageIndex]
 	messageIndex = (messageIndex + 1) % messages.length
 	const currentSize = parseFloat(window.getComputedStyle(yesButton).fontSize)
 	const currenth = parseFloat(window.getComputedStyle(yesButton).height)
 	const currentw = parseFloat(window.getComputedStyle(yesButton).width)
 	console.log(currentw)
+	if (messageIndex !== 4) {
+		yesButton.style.height = `${currenth * 1.5}px`
+		yesButton.style.width = `${currentw * 1.5}px`
+	}
 	yesButton.style.fontSize = `${currentSize * 1.5}px`
-	yesButton.style.height = `${currenth * 1.5}px`
-	yesButton.style.width = `${currentw * 1.5}px`
+
 	if (messageIndex === 5) {
-        // yesButton.style.zIndex = 100
-        noButton.style.position = 'static'
+		// yesButton.style.zIndex = 100
+		noButton.style.position = 'static'
 		console.log(123)
 		// yesButton.style.position = 'absolute'
 		// yesButton.style.top = 0
@@ -76,7 +79,7 @@ function handleNoClick() {
 		yesButton.style.width = '100vw'
 		yesButton.style.height = '100vh'
 		// yesButton.style.fontSize = `80px`
-        yesButton.classList.add("last") 
+		yesButton.classList.add('last')
 		// top: 0;
 		// left: 0;
 		// position: absolute;
