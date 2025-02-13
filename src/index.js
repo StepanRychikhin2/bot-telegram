@@ -76,8 +76,8 @@ function handleNoClick() {
 		// yesButton.style.position = 'absolute'
 		// yesButton.style.top = 0
 		// yesButton.style.left = 0
-		yesButton.style.width = '100vw'
-		yesButton.style.height = '100vh'
+		// yesButton.style.width = '100vw'
+		// yesButton.style.height = '100vh'
 		// yesButton.style.fontSize = `80px`
 		yesButton.classList.add('last')
 		// top: 0;
