@@ -40,21 +40,7 @@ h1 {
 	margin: 0;
 	box-sizing: border-box;
 }
-.yes-button {
-	transition: all 0.8s ease-in-out;
-	font-family: 'Play', serif;
-	font-weight: 400;
-	font-style: normal;
-	font-size: 1.5em;
-	padding: 5px 10px;
-	background-color: #4caf50;
-	color: white;
-	border: none;
-	border-radius: 5px;
-	cursor: pointer;
-	height: 55.5px;
-	width: 87.6796px;
-}
+
 
 .no-button {
 	z-index: 10;
@@ -71,10 +57,10 @@ h1 {
 }
 
 .gifka {
-	max-width: 100%;
+	max-width: 50%;
 	height: auto;
 	border-radius: 10px;
-	margin-top: 20px;
+	margin-top: 100px;
 }
 .last {
 	/* font-size: 80px; */
@@ -84,4 +70,21 @@ h1 {
 	z-index: 100;
 	border: 0;
 	position: absolute;
+}
+.yes-button {
+	transition: all 0.8s ease-in-out;
+	font-family: 'Play', serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 1.5em;
+	padding: 5px 10px;
+	background-color: #4caf50;
+	color: white;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	height: 55.5px;
+	width: 87.6796px;
+position: absolute;
+
 }
