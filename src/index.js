@@ -51,7 +51,7 @@ function handleNoClick() {
 	const noButton = document.querySelector('.no-button')
 	const yesButton = document.querySelector('.yes-button')
 	// yesButton.textContent =  yesButton.textContent + "!"
-
+	yesButton.textContent = yesButton.textContent + "!"
 	let btnLeft = Math.floor(Math.random() * 60 - 40) + 40
 	let top = Math.floor(Math.random() * (90 - 65 + 1)) + 65
 	noButton.style.left = btnLeft + '%'
@@ -67,7 +67,7 @@ function handleNoClick() {
 		yesButton.style.height = `${currenth * 1.5}px`
 		yesButton.style.width = `${currentw * 1.5}px`
 	}
-	yesButton.style.fontSize = `${currentSize * 1.5}px`
+	yesButton.style.fontSize = `${currentSize * 1.3}px`
 
 	if (messageIndex === 5) {
 		// yesButton.style.zIndex = 100
