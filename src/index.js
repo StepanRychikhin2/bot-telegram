@@ -63,7 +63,7 @@ function handleNoClick() {
 	const currenth = parseFloat(window.getComputedStyle(yesButton).height)
 	const currentw = parseFloat(window.getComputedStyle(yesButton).width)
 	console.log(currentw)
-	if (messageIndex !== 4) {
+	if (messageIndex !== 5) {
 		yesButton.style.height = `${currenth * 1.5}px`
 		yesButton.style.width = `${currentw * 1.5}px`
 	}
@@ -76,8 +76,8 @@ function handleNoClick() {
 		// yesButton.style.position = 'absolute'
 		// yesButton.style.top = 0
 		// yesButton.style.left = 0
-		// yesButton.style.width = '100vw'
-		// yesButton.style.height = '100vh'
+		yesButton.style.width = '100%'
+		yesButton.style.height = '100%'
 		// yesButton.style.fontSize = `80px`
 		yesButton.classList.add('last')
 		// top: 0;
